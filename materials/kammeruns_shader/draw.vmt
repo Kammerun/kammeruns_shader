@@ -1,0 +1,12 @@
+screenspace_general
+{
+    $pixshader "draw_ps20b"
+    $basetexture "_rt_FullFrameFB"
+    $texture2 "effects/tvscreen_noise"
+    $c0_x 0
+    $ignorez 1
+    $vertexcolor 1
+    $vertexalpha 1
+    $nolod 1
+    $vertextransform 1
+}

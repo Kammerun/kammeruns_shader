@@ -1,6 +1,9 @@
 local mats = { 
     Material("kammeruns_shader/black_and_white.vmt"),
-    Material("kammeruns_shader/grey_spiral.vmt")
+    Material("kammeruns_shader/grey_spiral.vmt"),
+    Material("kammeruns_shader/sobel_grey.vmt"),
+    Material("kammeruns_shader/sobel_color.vmt"),
+    Material("kammeruns_shader/draw.vmt")
 }
 
 local function drawShader(material)
@@ -17,7 +20,7 @@ end
 local show = CreateConVar("show_kammeruns_shader", "0")
 
 hook.Add("RenderScreenspaceEffects", "GrayscaleEffect", function()
-    if show:GetInt() < 1 then return end
+    if show:GetInt() < 1 or show:GetInt() >= #mats then return end
 
     drawShader(mats[show:GetInt()])
 end)
