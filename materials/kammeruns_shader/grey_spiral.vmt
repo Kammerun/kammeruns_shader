@@ -1,0 +1,8 @@
+screenspace_general
+{
+    $basetexture "models/debug/debugwhite"
+    $pixshader "spiral1_ps20b"
+    $c0_x 0
+    $ignorez 1
+    $vertextransform 1
+}
