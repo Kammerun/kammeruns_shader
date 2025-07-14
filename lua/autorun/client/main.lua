@@ -3,7 +3,8 @@ local mats = {
     Material("kammeruns_shader/grey_spiral.vmt"),
     Material("kammeruns_shader/sobel_grey.vmt"),
     Material("kammeruns_shader/sobel_color.vmt"),
-    Material("kammeruns_shader/draw.vmt")
+    Material("kammeruns_shader/draw.vmt"),
+    Material("kammeruns_shader/teleport.vmt")
 }
 
 local function drawShader(material)

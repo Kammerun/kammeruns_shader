@@ -1,0 +1,11 @@
+screenspace_general
+{
+    $pixshader "teleport_ps30"
+    $basetexture "models/debug/debugwhite"
+    $c0_x 0
+    $c0_y 1
+    $ignorez 1
+    $vertextransform 1
+    $nocull 1
+    $additive 1  // <-- Durchsichtig oder nicht?
+}
